@@ -32,8 +32,8 @@
       </div>
       <div class="col-sm-4 col-md-4">
         <p>
-          Do you have a question ?<br>
-          Do you want to be affiliate ?<br><br>
+          <a data-toggle="modal" href="#affiliate_modal"> Do you have a question ?<br>
+          Do you want to be affiliate ?</a><br><br>
           Copyright <span class="glyphicon .glyphicon-copyright-mark"></span>2013 BeithCoin.<br>
           <span id="bc_donate">Donations: [enter address here]</span>
         </p>
@@ -42,6 +42,10 @@
         <img src="images/wallet.png" />
       </div>
     </footer>
+
+
+    <%- partial('partials/affiliate_modal') %>
+
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular.min.js"></script>
