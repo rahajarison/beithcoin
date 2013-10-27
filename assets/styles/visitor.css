@@ -1,5 +1,6 @@
+/*Header*/
 .bc_fetcher .page-header { border-top: 14px solid rgb(79,78,79); background-color: rgba(255,216,137, 0.8); margin-top: -5px; height: 85px;
-                           padding-left: 13%; padding-right: 20% }
+                           padding-left: 13%; padding-right: 13%; position: fixed; width: 100%}
 .bc_fetcher .page-header h1 { text-align: center; color: rgb(79,78,79); font-weight: 700; height: 100%; font-size: 2.35em}
 .bc_fetcher .page-header .row { text-align: center; vertical-align: middle; height: 80px;}
 .bc_fetcher .page-header .bc_visitor_address_container { height: 100%; padding-top: 1.8%; padding-bottom: 2.3%; }
@@ -8,5 +9,21 @@
 .bc_fetcher .bc_next { height: 100%; line-height: 80px;}
 .bc_fetcher .page-header .bc_next .btn-next { border-radius: 4px; border-color: white; color: white; background-color: rgb(79,78,79); font-weight: bold;
                                               height: 53%; width: 40%; font-size: 1.2em }
+.bc_fetcher .page-header .bc_next .btn-next:hover { background-color: rgba(79,78,79,0.8) }
 
+/*Content*/
+.bc_fetcher .homepage h1, h2, h3  { text-align: center; }
+.bc_fetcher .homepage h1 { margin-top: 3%; font-size: 3em; font-weight: bolder; }
+.bc_fetcher .homepage h3 { margin-top: 2%; font-size: 1em; font-weight: bolder; color: #F6CF70; }
+.bc_fetcher .homepage h2 { margin-top: 5%; font-weight: bolder; font-size: 1.8em; }
+.bc_fetcher .tutorial { margin-top: 3%; padding-left: 17%; padding-right: 17%; text-align: center }
+.bc_fetcher .tutorial img { max-width: 32%; display: inline; }
+.bc_fetcher .tutorial p { font-weight: bold; }
+.bc_fetcher #bc_start { margin-top: 5%; width: 20%; font-weight: bold}
 
+.bc_fetcher .content_app { padding-top: 85px;}
+/*Footer*/
+.bc_fetcher footer { padding-left: 13%; padding-right: 13%; background-color: rgb(79,78,79); height: 100px; position: fixed; width: 100%; bottom: 0px; padding-bottom: 2px;}
+.bc_fetcher footer img { width: 40%; height: 5%; border: 1px dashed black; }
+.bc_fetcher footer p { padding-top: 2px; color: white; font-weight: bold; padding-bottom: 2px; }
+.bc_fetcher footer p #bc_donate { font-weight: normal; }
