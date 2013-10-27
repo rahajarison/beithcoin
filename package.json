@@ -1,7 +1,7 @@
 {
   "name": "bitcoin",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0-8",
   "description": "Bitcoin's advertising application",
   "dependencies": {
     "sails": "0.9.7",
@@ -17,5 +17,9 @@
   "main": "app.js",
   "repository": "",
   "author": "",
-  "license": ""
+  "license": "",
+  "subdomain": "beithcoin",
+  "engines": {
+    "node": "0.10.x"
+  }
 }
