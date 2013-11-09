@@ -21,9 +21,9 @@
 .bc_fetcher .tutorial p { font-weight: bold; }
 .bc_fetcher #bc_start { margin-top: 5%; width: 20%; font-weight: bold}
 
-.bc_fetcher .content_app { padding-top: 85px;}
+.bc_fetcher .content_app { padding-top: 85px; }
 
-.bc_fetcher .iframe-app { width: 100%; height: 100%; padding-bottom: 4%;}
+.bc_fetcher .iframe-app { width: 100%; height: 87%; position: fixed; padding-bottom: 4%;}
 .bc_fetcher iframe { width: 100%; height: 100%; }
 /*Footer*/
 .bc_fetcher footer { padding-left: 13%; padding-right: 13%; background-color: rgb(79,78,79); height: 78px; position: fixed; width: 100%; bottom: 0px; padding-bottom: 2px;}

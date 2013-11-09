@@ -18,6 +18,7 @@ app.controller('homePageCtrl', ['$scope', '$http', '$sce', function homePageCtrl
   };
 
   $scope.next = function() {
+    $scope.started = true;
     index = $scope.websites_list.indexOf($scope.website);
     ++index
     index %= $scope.websites_list.length
@@ -25,11 +26,6 @@ app.controller('homePageCtrl', ['$scope', '$http', '$sce', function homePageCtrl
     $scope.url = $sce.trustAsResourceUrl($scope.website.url);
     console.log($scope.website.url)
   }
-
-  $scope.start = function() {
-    $scope.started = true;
-    $scope.next();
-  };
 
 }]);
 
