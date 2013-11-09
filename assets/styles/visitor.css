@@ -1,5 +1,5 @@
 /*Header*/
-.bc_fetcher .page-header { border-top: 10px solid rgb(79,78,79); background-color: rgba(255, 231, 55, 0.8); margin-top: -5px; height: 85px;
+.bc_fetcher .page-header { border-top: 10px solid rgb(79,78,79); background-color: rgb(254,234,94); margin: 0px; padding-bottom: 0px; margin-top: -5px; height: 85px;
                            padding-left: 13%; padding-right: 13%; position: fixed; width: 100%}
 .bc_fetcher .page-header h1 { text-align: center; color: rgb(79,78,79); font-weight: 700; height: 100%; font-size: 2.35em}
 .bc_fetcher .page-header .row { text-align: center; vertical-align: middle; height: 80px;}
@@ -22,6 +22,9 @@
 .bc_fetcher #bc_start { margin-top: 5%; width: 20%; font-weight: bold}
 
 .bc_fetcher .content_app { padding-top: 85px;}
+
+.bc_fetcher .iframe-app { width: 100%; height: 100%; padding-bottom: 4%;}
+.bc_fetcher iframe { width: 100%; height: 100%; }
 /*Footer*/
 .bc_fetcher footer { padding-left: 13%; padding-right: 13%; background-color: rgb(79,78,79); height: 78px; position: fixed; width: 100%; bottom: 0px; padding-bottom: 2px;}
 .bc_fetcher footer img { width: 40%; height: 5%; border: 1px dashed black; }

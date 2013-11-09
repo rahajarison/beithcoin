@@ -1,4 +1,4 @@
-<div class="homepage" ng-controller="homePageCtrl">
+<div class="homepage" data-ng-if="!started">
   <h1>Earn <i>FREE</i> Bitcoins !</h1>
   <h3>How it works ?</h3>
   <div class="tutorial">
@@ -18,10 +18,15 @@
         <p class="col-sm-4 col-md-4">Solve the Captcha.<br>
         Only to prove that you are human</p>
         <p class="col-sm-4 col-md-4">Earn Bitcoins !<br>Click on 'Next site' to earn more Bitcoins</p>
+        <button class="btn btn-success" id="bc_start" data-ng-click="start()" data-ng-disabled="isLoading">START</button>
     </div>
 
-  <button class="btn btn-success" id="bc_start">START</button>
   <h2>The funniest way to get free Bitcoins.</h2>
 
   </div>
 </div>
+
+<div class="iframe-app" data-ng-if="started">
+  <iframe data-ng-src="{{url}}" seamless="true"></iframe>
+</div>
+
