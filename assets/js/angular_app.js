@@ -12,7 +12,6 @@ app.controller('homePageCtrl', ['$scope', '$http', '$sce', function homePageCtrl
     $scope.isLoading = true;
     $http.get('/website').success(function(websites) {
       $scope.websites_list = angular.copy(websites);
-      console.log(JSON.stringify($scope.websites_list))
       $scope.isLoading = false;
     });
   };
