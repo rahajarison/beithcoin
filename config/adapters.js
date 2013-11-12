@@ -18,10 +18,17 @@ module.exports.adapters = {
   // sails v.0.9.0
   mongo: {
     module: 'sails-mongo',
-    host     : 'localhost',
-    port     : 27017,
-    user     : 'reader',
-    password : 'bitcoin',
-    database : 'bitcoin_dev'
+
+    host: 'ds045978.mongolab.com',
+    port: 45978,
+    user     : 'nodejitsu_rahajarison',
+    password : 'nq58558o3afeisksa57ug912ft',
+    database : 'nodejitsu_rahajarison_nodejitsudb9305871310'
+
+    // host     : 'localhost',
+    // port     : 27017,
+    // user     : 'reader',
+    // password : 'bitcoin',
+    // database : 'bitcoin_dev'
   }
 };

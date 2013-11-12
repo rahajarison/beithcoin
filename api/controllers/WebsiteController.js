@@ -17,7 +17,11 @@
 
 module.exports = {
 
-
+  index: function(req, res) {
+    Website.find().exec(function(err, websites) {
+      return res.json(websites);
+    });
+  }
   // index: function(req, res) {
     // res.json({test: 'totou'})
   // }

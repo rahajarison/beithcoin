@@ -1,7 +1,7 @@
 {
   "name": "bitcoin",
   "private": true,
-  "version": "0.0.0-14",
+  "version": "0.0.0-19",
   "description": "Bitcoin's advertising application",
   "dependencies": {
     "sails": "0.9.7",
