@@ -1,7 +1,7 @@
 {
   "name": "bitcoin",
   "private": true,
-  "version": "0.0.0-19",
+  "version": "0.0.0-22",
   "description": "Bitcoin's advertising application",
   "dependencies": {
     "sails": "0.9.7",
@@ -19,6 +19,10 @@
   "author": "jrahajarison",
   "license": "MIT",
   "subdomain": "beithcoin",
+  "domains": [
+    "reachcoin.com",
+    "www.reachcoin.com"
+  ],
   "engines": {
     "node": "0.10.x"
   }
