@@ -33,8 +33,9 @@
         websites = new Array();
         for (var i = 1; i <= rowCount; ++i) {
           websites.push(cells.cells[i + '']['2'].value);
-          return res.json(websites);
-        });
+        }
+        return res.json(websites);
+      });
     });
 
   }
