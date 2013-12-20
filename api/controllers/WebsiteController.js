@@ -15,16 +15,29 @@
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
-module.exports = {
+ var GoogleSpreadsheets = require('google-spreadsheets');
+ var util = require('util');
+ var rowCount = 0;
+
+ module.exports = {
 
   index: function(req, res) {
-    Website.find().exec(function(err, websites) {
-      return res.json(websites);
+
+    GoogleSpreadsheets({
+      key: "0AiM_8K3iyBKjdGRrOGs1SjE3VzB0ZUExbkt0VXRnMkE"
+    }, function(err, spreadsheet) {
+      rowCount = spreadsheet.worksheets[0].rowCount;
+      spreadsheet.worksheets[0].cells({
+        range: "R1C2:R" + rowCount + "C2"
+      }, function(err, cells) {
+        websites = new Array();
+        for (var i = 1; i <= rowCount; ++i) {
+          websites.push(cells.cells[i + '']['2'].value);
+          return res.json(websites);
+        });
     });
+
   }
-  // index: function(req, res) {
-    // res.json({test: 'totou'})
-  // }
 
   /**
    * Overrides for the settings in `config/controllers.js`

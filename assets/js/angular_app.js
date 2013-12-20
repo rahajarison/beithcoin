@@ -4,7 +4,7 @@ app.controller('homePageCtrl', ['$scope', '$http', '$sce', function homePageCtrl
   $scope.isLoading;           // state of application
   $scope.started;             // state that user clicked on 'start'
   $scope.websites_list = [];  // list of websites
-  $scope.website;             // index of selected's website
+  $scope.website = -1;        // index of selected's website
   $scope.url;                 // url of the website
 
   $scope.init = function() {
@@ -18,12 +18,9 @@ app.controller('homePageCtrl', ['$scope', '$http', '$sce', function homePageCtrl
 
   $scope.next = function() {
     $scope.started = true;
-    index = $scope.websites_list.indexOf($scope.website);
-    ++index
-    index %= $scope.websites_list.length
-    $scope.website = $scope.websites_list[index];
-    $scope.url = $sce.trustAsResourceUrl($scope.website.url);
-    console.log($scope.website.url)
+    ++$scope.website;
+    $scope.website %= $scope.websites_list.length;
+    $scope.url = $sce.trustAsResourceUrl($scope.websites_list[$scope.website]);
   }
 
 }]);
